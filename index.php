@@ -10,6 +10,7 @@ require_once './app/controllers/usuarioController.php';
 require_once './app/controllers/hortalizaController.php';
 require_once './app/controllers/ventaController.php';
 require_once './app/controllers/estadisticas.php';
+require_once './app/controllers/manejoArchivos.php';
 require './app/mw/MWparaAutentificar.php';
 
 $config['displayErrorDetails'] = true;
@@ -89,6 +90,12 @@ $app->group('/estadisticas', function () {
    
     $this->get('/', \estadisticas::class . ':TraerHortalizaMasVendida');
   
+       
+})->add(\MWparaAutentificar::class . ':VerificarUsuario');
+
+$app->group('/archivos', function () {
+ 
+    $this->post('/', \manejoArchivos::class . ':GuardarDatos');
        
 })->add(\MWparaAutentificar::class . ':VerificarUsuario');
 
