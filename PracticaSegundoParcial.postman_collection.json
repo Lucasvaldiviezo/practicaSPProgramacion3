@@ -1,0 +1,366 @@
+{
+	"info": {
+		"_postman_id": "eb8b2362-8e54-41de-b733-24fe92d577f1",
+		"name": "PracticaSegundoParcial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "http://localhost/PracticaSegundoParcial/index.php/usuario/",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjM2NDExNjQsImV4cCI6MTYyMzY0NDc2NCwiYXVkIjoiNzliYmM1MGMwMWEyZTVkMzc3MTUzZTY5MGE1OTgxNmFhY2Q0Njc0ZCIsImRhdGEiOnsidXN1YXJpbyI6Imx1Y2FzQGx1Y2FzLmNvbSIsInBlcmZpbCI6bnVsbCwiY2xhdmUiOiIxMjM0In0sImFwcCI6IkFQSSBSRVNUIFJFU1RBVVJBTlQgMjAyMSJ9.5dDFpc2CXVqxrEMEH2jso29ZD4l8VIin7V7Cn5pHRDg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nombre",
+									"value": "Martin",
+									"type": "text"
+								},
+								{
+									"key": "apellido",
+									"value": "Bottani",
+									"type": "text"
+								},
+								{
+									"key": "mail",
+									"value": "martin@martin.com",
+									"type": "text"
+								},
+								{
+									"key": "clave",
+									"value": "51xasd",
+									"type": "text"
+								},
+								{
+									"key": "puesto",
+									"value": "vendedor",
+									"type": "text"
+								},
+								{
+									"key": "sexo",
+									"value": "masculino",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/PracticaSegundoParcial/index.php/usuario/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"PracticaSegundoParcial",
+								"index.php",
+								"usuario",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "http://localhost/PracticaSegundoParcial/index.php/login/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mail",
+									"value": "lucas@lucas.com",
+									"type": "text"
+								},
+								{
+									"key": "clave",
+									"value": "1234",
+									"type": "text"
+								},
+								{
+									"key": "sexo",
+									"value": "masculino",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/PracticaSegundoParcial/index.php/login/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"PracticaSegundoParcial",
+								"index.php",
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hortaliza",
+			"item": [
+				{
+					"name": "http://localhost/PracticaSegundoParcial/index.php/hortaliza/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nombre",
+									"value": "tomate",
+									"type": "text"
+								},
+								{
+									"key": "precio",
+									"value": "15",
+									"type": "text"
+								},
+								{
+									"key": "tipo",
+									"value": "fruta",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "foto",
+									"type": "file",
+									"src": "/C:/Users/Altromist/Desktop/1200px-Bright_red_tomato_and_cross_section02.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/PracticaSegundoParcial/index.php/hortaliza/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"PracticaSegundoParcial",
+								"index.php",
+								"hortaliza",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/PracticaSegundoParcial/index.php/hortaliza/2",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost/PracticaSegundoParcial/index.php/hortaliza/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"PracticaSegundoParcial",
+								"index.php",
+								"hortaliza",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/PracticaSegundoParcial/index.php/hortaliza/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/PracticaSegundoParcial/index.php/hortaliza/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"PracticaSegundoParcial",
+								"index.php",
+								"hortaliza",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/PracticaSegundoParcial/index.php/hortaliza/",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "manzana",
+									"type": "text"
+								},
+								{
+									"key": "precio",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "tipo",
+									"value": "fruta",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "60",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/PracticaSegundoParcial/index.php/hortaliza/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"PracticaSegundoParcial",
+								"index.php",
+								"hortaliza",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Venta",
+			"item": [
+				{
+					"name": "http://localhost/PracticaSegundoParcial/index.php/venta/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idHortaliza",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "idEmpleado",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "cantidad",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "idCliente",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/PracticaSegundoParcial/index.php/venta/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"PracticaSegundoParcial",
+								"index.php",
+								"venta",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "estadisticas",
+			"item": [
+				{
+					"name": "http://localhost/PracticaSegundoParcial/index.php/estadisticas/",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjM2NTU4NzQsImV4cCI6MTYyMzY1OTQ3NCwiYXVkIjoiNzliYmM1MGMwMWEyZTVkMzc3MTUzZTY5MGE1OTgxNmFhY2Q0Njc0ZCIsImRhdGEiOnsidXN1YXJpbyI6Im1hcnRpbkBtYXJ0aW4uY29tIiwicGVyZmlsIjoidmVuZGVkb3IiLCJjbGF2ZSI6IjUxeGFzZCJ9LCJhcHAiOiJBUEkgUkVTVCBSRVNUQVVSQU5UIDIwMjEifQ.ezkUBQFQD-2oMwwjOfF97ssZl4iiL_FKiOGPDMF0FF8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/PracticaSegundoParcial/index.php/estadisticas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"PracticaSegundoParcial",
+								"index.php",
+								"estadisticas",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
